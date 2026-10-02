@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ccc;
+}
+
+/* HEADER */
+header {
+    background-color: #2878d8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* HAMBURGER MENU */
+.menu-btn {
+    background-color: #4a83d6;
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Hamburger lines */
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px auto;
+}
+
+/* NAVIGATION */
+nav {
+    display: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* MAIN */
+main {
+    text-align: center;
+}
+
+main h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* PICTURES */
+.pictures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.pictures img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border: 2px solid white;
+    box-shadow: 0 2px 5px #555;
+}
+
+footer {
+    background-color: #2878d8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* =========================
+   TABLET / DESKTOP
+   ========================= */
+
+@media screen and (min-width: 600px) {
+
+    /* Hide hamburger */
+    .menu-btn {
+        display: none;
+    }
+
+    /* Show navigation */
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 10px;
+    }
+
+    /* Change pictures to a grid */
+    .pictures {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    /* Change pictures to a grid */
+    .pictures {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
