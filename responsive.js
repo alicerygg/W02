@@ -5,5 +5,3 @@ menuButton.addEventListener('click', (e) => {
     let nav = document.querySelector('nav');
     nav.classList.toggle('show');
 });
-
-// Ignore
