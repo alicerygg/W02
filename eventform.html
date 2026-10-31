@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="eventform.css">
+    <script src="eventform.js" defer></script><link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <h1>Event Ticket</h1>
+    <form id="ticketForm">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname" required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lname" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="type">Type</label>
+        <select id="type" name="type" required>
+            <option value="" disabled selected>Select One</option>
+            <option value="student">Student</option>
+            <option value="guest">Guest</option>
+        </select>
+        <div id="extraField" hidden>
+            <label for="studentGuestInfo" id="extraLabel">Student I#</label>
+            <input type="text" id="studentGuestInfo" name="studentGuestInfo">
+        </div>
+        <label for="event">Event Date</label>
+        <input type="date" id="event" name="event">
+        <button type="submit">Get Ticket</button>
+    </form>
+    <div id="errors" aria-live="polite"></div>
+    <div id="ticketInfo" aria-live="polite"></div>
+</body>
+</html>

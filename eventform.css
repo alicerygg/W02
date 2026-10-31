@@ -1,0 +1,123 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f0f8;
+    color: #292333;
+    margin: 0;
+    padding: 30px 15px;
+}
+
+/* Page heading */
+h1 {
+    text-align: center;
+    color: #5e4778;
+    margin-bottom: 25px;
+}
+
+/* Form container */
+form {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+/* Form inputs and dropdown */
+input,
+select {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #c9bfd4;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+/* Focus styling */
+input:focus,
+select:focus {
+    outline: 2px solid #8d70ad;
+    border-color: #8d70ad;
+}
+
+/* Submit button */
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #6f548d;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #503969;
+}
+
+/* Error messages */
+#errors {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0 15px;
+    color: #a32222;
+}
+
+#errors h2 {
+    font-size: 1.2rem;
+}
+
+#errors li {
+    margin-bottom: 8px;
+}
+
+/* Successful ticket information */
+#ticketInfo {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e7f5e9;
+    border: 1px solid #a6d8ad;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
+}
+
+#ticketInfo h2 {
+    color: #245b30;
+    margin-top: 0;
+}
+
+/* Hide the conditional field until a type is selected */
+#extraField[hidden] {
+    display: none;
+}
+
+/* Small-screen adjustments */
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    form {
+        padding: 18px;
+    }
+}
