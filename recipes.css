@@ -1,0 +1,166 @@
+/* General page styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header layout */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 60px;
+}
+
+.logo h1 {
+    font-family: "Amatic SC", cursive;
+    font-size: 2.5rem;
+    margin: 0;
+}
+.search {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.search button {
+    padding: 8px 12px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 24px;
+    display: block;
+}
+
+/* Recipe card layout */
+.recipe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.recipe > img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.recipe-content {
+    flex: 1;
+    min-width: 200px;
+}
+
+.category {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.recipe h2 {
+    font-family: "Amatic SC", cursive;
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.rating {
+    display: block;
+    margin: 10px 0;
+}
+
+.icon-star {
+    color: #f4b400;
+}
+
+.icon-star-empty {
+    color: #999;
+}
+
+.description {
+    line-height: 1.6;
+}
+
+/* Footer layout */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.social {
+    display: flex;
+    gap: 15px;
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+}
+/* Mobile layout */
+@media screen and (max-width: 600px) {
+    .description {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .recipe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .recipe-content {
+        width: 100%;
+    }
+}
