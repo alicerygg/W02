@@ -28,6 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="recipes.css">
+    <script src="recipes.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,12 +36,17 @@
             <img src="recipe-book.png" alt="Recipe Book Logo">
             <h1>Recipe Book</h1>
         </div>
-        <form class="search">
-            <input type="text" placeholder="Find a recipe">
-            <button type="submit">
-                <img src="search.svg" alt="Search">
-        </button>
-        </form>
+        <form class="search" id="search-form">
+    <input
+        type="search"
+        id="search-input"
+        placeholder="Find a recipe"
+        aria-label="Search recipes"
+    >
+    <button type="submit">
+        <img src="search.svg" alt="Search">
+    </button>
+</form>
     </header>
 <main>
     <article class="recipe">
